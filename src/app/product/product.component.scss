@@ -1,0 +1,20 @@
+
+    
+    img {
+        margin-right: 3%;
+    }
+
+    p, h6 {
+        -webkit-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+    h6 {
+        -webkit-line-clamp: 2; 
+    }
+    button {
+        align-self: center;
+    }

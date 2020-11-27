@@ -1,0 +1,5 @@
+<div class="product-list">
+    <div class="product-wrapper" infiniteScroll [infiniteScrollDistance]="0.5" (scrolled)="onScrollEnd()">
+        <app-product class="product-container" *ngFor="let product of productList" [product]="product"></app-product>
+    </div>
+</div>

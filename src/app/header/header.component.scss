@@ -1,0 +1,13 @@
+header {
+    nav {
+        .cart-count {
+            position: relative;
+
+            span {
+                position: absolute;
+                top: -15px;
+                right: -15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+<div class="d-flex"><img src="{{product.image}}" alt="Smiley face" width="42" height="42">
+    <h6>
+        <span>{{product.name}}</span><br>
+        <span>${{product.price}}</span>
+    </h6>
+</div>
+
+<p>{{product.description}}</p>
+<button *ngIf="!inCart" type="button" class="btn btn-info mt-auto" (click)="addToCart(product)">
+    <span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart </button>
+    <button *ngIf="inCart" type="button" class="btn btn-info mt-auto" (click)="removeFromCart(product)">
+        <span class="glyphicon glyphicon-shopping-cart"></span> Remove From Cart </button>
